@@ -3,15 +3,59 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>IC Hello Starter</title>
-  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drug Check</title>
   <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+  <nav>
+    <img src="logo.png" alt="Logo">
+    <div class="dropdown">
+      <a href="/features">Features</a>
+      <div class="dropdown-content">
+        <a href="/check_drugs_id">Check Drugs ID</a>
+        <a href="/report">Report</a>
+      </div>
+    </div>
+    <a href="/about">About Us</a>
+    <a href="/contact">Contact Us</a>
+  </nav>
+
+  <main>
+    <h2>Drug Check</h2>
+
+    <div className="card">
+      <h3>Check drug id...</h3>
+      <div className="mb-4">
+      <label htmlFor="newDrugName" className="block text-gray-700 text-sm font-semibold mb-2">
+        Name:
+      </label>
+      <input
+        type="text"
+        id="newDrugName"
+        className="w-full border p-2 rounded-md"
+        placeholder="Enter name"
+       
+      /><label htmlFor="newId" className="block text-gray-700 text-sm font-semibold mb-2">
+      Id:
+    </label>
+    <input
+      type="text"
+      id="newId"
+      className="w-full border p-2 rounded-md"
+      placeholder="Enter name"
+     
+    />
+      <div className="flex justify-center my-8">
+       <a href="#" className="btn-primary">Submit</a>
+
+    </div>
+    </div>
+    </div>
+    
+  </main>
 </body>
 
 </html>

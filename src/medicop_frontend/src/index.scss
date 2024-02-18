@@ -1,37 +1,135 @@
 body {
-  font-family: sans-serif;
-  font-size: 1.5rem;
+  background: #ebf0fa;
+  color: #718096;
+  margin: 2rem;
 }
 
-img {
-  max-width: 50vw;
-  max-height: 25vw;
-  display: block;
-  margin: auto;
+h1,
+h2 {
+  font-weight: bold;
+  color: #2563eb;
+  font-size: 1.125rem;
 }
 
-form {
+main {
+  max-width: 80rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+main > h2 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+p > a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+nav {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #cbd5e0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+nav h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #4a5568;
+}
+
+nav a,
+nav span {
+  color: #4a5568;
+  transition: transform 0.2s;
+}
+
+nav a:hover {
+  color: #1a202c;
+  transform: scale(1.1);
+}
+
+main nav {
+  border: none;
+}
+
+nav > *:not(:first-child) {
+  margin-left: auto;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #2c7be5;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card h3 {
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #4a5568;
+}
+
+.warning-card {
   display: flex;
   justify-content: center;
-  gap: 0.5em;
-  flex-flow: row wrap;
-  max-width: 40vw;
-  margin: auto;
-  align-items: baseline;
+  align-items: center;
+  height: 450px;
+  width: 450px;
+  background-color: #f56565;
+  margin: 20px auto;
 }
 
-button[type="submit"] {
-  padding: 5px 20px;
-  margin: 10px auto;
-  float: right;
-}
-
-#greeting {
-  margin: 10px auto;
-  padding: 10px 60px;
-  border: 1px solid #222;
-}
-
-#greeting:empty {
-  display: none;
+.custom-card {
+  padding: 20px;
+  color: white;
+  text-align: center;
 }
