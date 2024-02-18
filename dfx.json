@@ -1,0 +1,37 @@
+{
+  "canisters": {
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    },
+    "medicop_backend": {
+      "main": "src/medicop_backend/main.mo",
+      "type": "motoko"
+    },
+    "medicop_frontend": {
+      "dependencies": [
+        "medicop_backend"
+      ],
+      "source": [
+        "src/medicop_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "medicop_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
